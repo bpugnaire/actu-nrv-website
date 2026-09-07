@@ -42,7 +42,7 @@ theme/                custom Ghost theme
 migration/            demo fixture and future Joomla/AcyMailing importer
 infrastructure/       OVHcloud deployment configuration
 scripts/              reproducible setup, export and packaging tools
-preview-dist/         generated private review edition
+out/                  generated private review edition
 ```
 
 ## Run locally

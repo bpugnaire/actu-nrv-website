@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
-const outputRoot = path.join(projectRoot, 'preview-dist');
+const outputRoot = path.join(projectRoot, 'out');
 const sourceOrigin = process.env.NRV_PREVIEW_ORIGIN || 'http://127.0.0.1:2368';
 const publicOrigin = process.env.NRV_PUBLIC_ORIGIN || sourceOrigin;
 
