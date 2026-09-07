@@ -38,11 +38,26 @@ services:
       database__connection__database: ${MYSQL_DATABASE:-ghost}
       privacy__useUpdateCheck: "false"
       privacy__useGravatar: "false"
+      # Local-only inbox for Ghost sign-in codes and newsletter previews.
+      mail__transport: SMTP
+      mail__from: "Nice RendezVous <preview@nicerendezvous.local>"
+      mail__options__host: mailpit
+      mail__options__port: 1025
+      mail__options__secure: "false"
     volumes:
       - ghost-content:/var/lib/ghost/content
       # Ghost validates ownership when it starts, so the development bind mount
       # must be writable. Production receives a built theme artifact instead.
       - ./theme:/var/lib/ghost/content/themes/nice-rendezvous
+    networks:
+      - public
+      - private
+
+  mailpit:
+    image: axllent/mailpit:v1.27
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8025:8025"
     networks:
       - public
       - private

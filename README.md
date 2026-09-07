@@ -64,7 +64,10 @@ NRV_ADMIN_PASSWORD="choose-a-long-local-password" \
 ```
 
 Open the publication at `http://localhost:2368` and the editor at
-`http://localhost:2368/ghost/`.
+`http://localhost:2368/ghost/`. Ghost may request a six-digit sign-in code on
+a new device; the development-only mailbox is available at
+`http://localhost:8025`. It is bound to localhost and is never part of the
+production deployment.
 
 Package the installable theme with `./scripts/package-theme.sh`. The resulting
 ZIP is written to the ignored `dist/` directory.
