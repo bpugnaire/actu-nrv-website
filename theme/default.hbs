@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{@site.locale}}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#b20d18">
+    <link rel="preload" href="{{asset 'css/screen.css'}}" as="style">
+    <link rel="stylesheet" href="{{asset 'css/screen.css'}}">
+    <script src="{{asset 'js/main.js'}}" defer></script>
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    {{> site-header}}
+    <main id="contenu">
+        {{{body}}}
+    </main>
+    {{> newsletter}}
+    {{> site-footer}}
+    {{ghost_foot}}
+</body>
+</html>

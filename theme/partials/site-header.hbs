@@ -1,0 +1,36 @@
+<header class="site-header" data-header>
+    <div class="utility-bar">
+        <div class="shell utility-bar__inner">
+            <span>{{@custom.edition_label}}</span>
+            <time data-current-date>Édition du jour</time>
+            <a href="#/portal/signup">Recevoir La Lettre</a>
+        </div>
+    </div>
+    <div class="shell masthead">
+        <a class="brand" href="{{@site.url}}" aria-label="Nice RendezVous — Accueil">
+            {{#if @site.logo}}
+                <img class="brand__mark" src="{{@site.logo}}" alt="">
+            {{else}}
+                <img class="brand__mark" src="{{asset 'images/nrv-legacy-logo.jpg'}}" alt="">
+            {{/if}}
+            <span class="brand__wordmark">Nice<span>RendezVous</span></span>
+        </a>
+        <p class="masthead__promise">L’actualité, la culture et l’art de vivre<br>du pays niçois depuis 2002</p>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>
+            <span></span><span></span><span></span>
+            <span class="sr-only">Ouvrir le menu</span>
+        </button>
+    </div>
+    <div class="nav-wrap" id="site-navigation" data-navigation>
+        <nav class="shell primary-nav" aria-label="Navigation principale">
+            <a href="{{@site.url}}">À la une</a>
+            <a href="{{@site.url}}/tag/actualites/">Actualités</a>
+            <a href="{{@site.url}}/tag/culture/">Culture</a>
+            <a href="{{@site.url}}/tag/gastronomie/">Gastronomie</a>
+            <a href="{{@site.url}}/tag/patrimoine/">Patrimoine</a>
+            <a href="{{@site.url}}/tag/tourisme/">Tourisme</a>
+            <a class="primary-nav__discover" href="{{@site.url}}/decouvrir-nice/">Découvrir Nice</a>
+            {{search}}
+        </nav>
+    </div>
+</header>

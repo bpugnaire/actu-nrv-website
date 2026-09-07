@@ -1,0 +1,95 @@
+name: nice-rendezvous-production
+
+services:
+  caddy:
+    image: caddy:2.10.2-alpine
+    restart: unless-stopped
+    depends_on:
+      ghost:
+        condition: service_healthy
+    environment:
+      SITE_DOMAIN: ${SITE_DOMAIN:?Set SITE_DOMAIN in the server environment}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    networks:
+      - public
+
+  ghost:
+    build:
+      context: ..
+      dockerfile: infrastructure/Dockerfile.ghost
+    image: nice-rendezvous-ghost:${RELEASE_TAG:-local}
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      url: https://${SITE_DOMAIN:?Set SITE_DOMAIN in the server environment}
+      database__client: mysql
+      database__connection__host: db
+      database__connection__user: ghost
+      database__connection__password_FILE: /run/secrets/db_password
+      database__connection__database: ghost
+      mail__from: ${MAIL_FROM:?Set MAIL_FROM in the server environment}
+      privacy__useUpdateCheck: "false"
+      privacy__useGravatar: "false"
+    secrets:
+      - db_password
+    volumes:
+      - ghost-content:/var/lib/ghost/content
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:2368/ghost/api/admin/site/"]
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 60s
+    networks:
+      - public
+      - private
+
+  db:
+    image: mysql:8.0.43
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: ghost
+      MYSQL_USER: ghost
+      MYSQL_PASSWORD_FILE: /run/secrets/db_password
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
+    secrets:
+      - db_password
+      - db_root_password
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -p$$(cat /run/secrets/db_root_password)"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 30s
+    networks:
+      - private
+
+secrets:
+  db_password:
+    file: ./secrets/db_password
+  db_root_password:
+    file: ./secrets/db_root_password
+
+volumes:
+  caddy-data:
+  caddy-config:
+  ghost-content:
+  mysql-data:
+
+networks:
+  public:
+  private:
+    internal: true

@@ -1,0 +1,17 @@
+{{!< default}}
+
+{{#post}}
+<article class="page-article">
+    {{#match @page.show_title_and_feature_image}}
+    <header class="page-header shell shell--article">
+        <p class="eyebrow">Nice RendezVous</p>
+        <h1>{{title}}</h1>
+        {{#if custom_excerpt}}<p>{{custom_excerpt}}</p>{{/if}}
+    </header>
+    {{#if feature_image}}
+        <figure class="article-hero shell"><img src="{{img_url feature_image size='xl'}}" alt="{{feature_image_alt}}"></figure>
+    {{/if}}
+    {{/match}}
+    <div class="gh-content article-content shell shell--copy">{{content}}</div>
+</article>
+{{/post}}

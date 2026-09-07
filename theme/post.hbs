@@ -1,0 +1,53 @@
+{{!< default}}
+
+{{#post}}
+<article class="article">
+    <header class="article-header shell shell--article">
+        {{#primary_tag}}<a class="kicker" href="{{url}}">{{name}}</a>{{/primary_tag}}
+        <h1>{{title}}</h1>
+        {{#if custom_excerpt}}<p class="article-deck">{{custom_excerpt}}</p>{{/if}}
+        <div class="article-byline">
+            <span>Par {{authors}}</span>
+            <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="D MMMM YYYY"}}</time>
+            <span>{{reading_time minute="1 minute" minutes="% minutes"}}</span>
+        </div>
+    </header>
+    {{#if feature_image}}
+        <figure class="article-hero shell">
+            <img
+                srcset="{{img_url feature_image size='m'}} 800w, {{img_url feature_image size='l'}} 1200w, {{img_url feature_image size='xl'}} 1800w"
+                sizes="(max-width: 1120px) 100vw, 1120px"
+                src="{{img_url feature_image size='xl'}}"
+                alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+            >
+            {{#if feature_image_caption}}<figcaption>{{feature_image_caption}}</figcaption>{{/if}}
+        </figure>
+    {{/if}}
+    <div class="article-layout shell shell--article">
+        <aside class="share-rail" aria-label="Partager cet article">
+            <span>Partager</span>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}" rel="noopener" target="_blank" aria-label="Partager sur Facebook">f</a>
+            <a href="mailto:?subject={{encode title}}&body={{url absolute='true'}}" aria-label="Partager par e-mail">@</a>
+        </aside>
+        <div class="gh-content article-content">{{content}}</div>
+    </div>
+    <footer class="article-footer shell shell--article">
+        <div class="article-tags">{{tags separator=""}}</div>
+        <div class="author-box">
+            {{#foreach authors}}
+                {{#if profile_image}}<img src="{{profile_image}}" alt="">{{/if}}
+                <div><span>La rédaction</span><h2>{{name}}</h2>{{#if bio}}<p>{{bio}}</p>{{/if}}</div>
+            {{/foreach}}
+        </div>
+    </footer>
+</article>
+
+{{#get "posts" filter="primary_tag:{{primary_tag.slug}}+id:-{{id}}" limit="3" include="tags"}}
+    {{#if posts}}
+    <section class="section shell related-section">
+        <header class="section-heading"><h2>À lire aussi</h2></header>
+        <div class="story-grid">{{#foreach posts}}{{> post-card}}{{/foreach}}</div>
+    </section>
+    {{/if}}
+{{/get}}
+{{/post}}

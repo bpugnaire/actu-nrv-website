@@ -12,8 +12,10 @@ second CMS from scratch.
 
 ## Current status
 
-The repository and the implementation plan have been initialised. No production
-data, credentials or legacy exports are stored here.
+The first working product is implemented: a custom Ghost 6 theme, responsive
+public routes, realistic French demonstration content, a reproducible local
+environment and an OVHcloud production container bundle. No production data,
+credentials or private legacy exports are stored here.
 
 Start here:
 
@@ -32,15 +34,40 @@ Start here:
 4. The production database and secrets are never public or committed to Git.
 5. The smallest maintainable system wins over a custom technology showcase.
 
-## Proposed repository shape
+## Repository shape
 
 ```text
 docs/                 decisions, delivery plan and operating procedures
-theme/                custom Ghost theme (next implementation phase)
-migration/            repeatable Joomla/AcyMailing import tools
-infrastructure/       local and OVHcloud deployment configuration
-tests/                migration, accessibility and browser checks
+theme/                custom Ghost theme
+migration/            demo fixture and future Joomla/AcyMailing importer
+infrastructure/       OVHcloud deployment configuration
+scripts/              reproducible setup, export and packaging tools
+preview-dist/         generated private review edition
 ```
+
+## Run locally
+
+Start Ghost and MySQL:
+
+```sh
+docker compose up -d
+```
+
+For a fresh database, create and seed a local editor account without storing its
+password in the repository:
+
+```sh
+NRV_ADMIN_NAME="Rédaction NRV" \
+NRV_ADMIN_EMAIL="you@example.com" \
+NRV_ADMIN_PASSWORD="choose-a-long-local-password" \
+./scripts/bootstrap-demo.sh
+```
+
+Open the publication at `http://localhost:2368` and the editor at
+`http://localhost:2368/ghost/`.
+
+Package the installable theme with `./scripts/package-theme.sh`. The resulting
+ZIP is written to the ignored `dist/` directory.
 
 ## Before production data is handled
 

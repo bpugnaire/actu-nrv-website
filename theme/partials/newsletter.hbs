@@ -1,0 +1,19 @@
+<aside class="newsletter-band" aria-labelledby="newsletter-title">
+    <div class="shell newsletter-band__inner">
+        <div>
+            <p class="eyebrow eyebrow--light">Chaque vendredi</p>
+            <h2 id="newsletter-title">{{@custom.newsletter_heading}}</h2>
+            <p>Nos articles, nos découvertes et les rendez-vous à ne pas manquer. Un seul courrier, sans bruit.</p>
+        </div>
+        <form class="newsletter-form" data-members-form="subscribe">
+            <label for="newsletter-email">Votre adresse e-mail</label>
+            <div class="newsletter-form__row">
+                <input id="newsletter-email" data-members-email type="email" placeholder="vous@exemple.fr" autocomplete="email" required>
+                <button type="submit">Je m’inscris</button>
+            </div>
+            <p class="form-message form-message--success" data-members-success>Merci. Regardez votre messagerie pour confirmer.</p>
+            <p class="form-message form-message--error" data-members-error>Impossible de vous inscrire pour le moment.</p>
+            <small>Vous pourrez vous désinscrire à tout moment.</small>
+        </form>
+    </div>
+</aside>

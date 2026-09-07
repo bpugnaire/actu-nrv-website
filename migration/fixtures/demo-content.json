@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "exported_on": 1788811200000,
+    "version": "6.0.0"
+  },
+  "data": {
+    "posts": [
+      {
+        "id": "000000000000000000000001",
+        "title": "Nice Classic Festival 2026, dans l’esprit d’Yves Saint Laurent",
+        "slug": "nice-classic-festival-2026-esprit-yves-saint-laurent",
+        "html": "<p>Du 21 juillet au 9 août, le cloître du Monastère de Cimiez accueillera une nouvelle édition du Nice Classic Festival. Musique, patrimoine et élégance dialogueront sous les voûtes séculaires.</p><h2>La musique au cœur de Cimiez</h2><p>Le festival retrouve ce lieu singulier où la pierre conserve la fraîcheur du soir. Le programme fera se rencontrer grands interprètes, jeunes talents et œuvres familières, avec une avant-première organisée pour la Fête de la musique.</p><blockquote>Un festival pensé comme une promenade : chaque concert ouvre une fenêtre différente sur la ville et son histoire.</blockquote><p>Cette édition rendra aussi hommage à l’imaginaire d’Yves Saint Laurent, amoureux de la lumière et des couleurs méditerranéennes. Les détails pratiques et le programme complet seront annoncés par les organisateurs.</p><h2>Informations pratiques</h2><p>Cloître du Monastère de Cimiez, place Jean-Paul II à Nice. Concerts du 21 juillet au 9 août 2026. Réservation conseillée.</p>",
+        "custom_excerpt": "Le cloître du Monastère de Cimiez accueillera du 21 juillet au 9 août une édition placée sous le signe de la musique et de l’élégance.",
+        "feature_image": "/content/images/2026/09/nice-editorial-cover.jpg",
+        "feature_image_alt": "Nice, sa vieille ville et la Méditerranée vues depuis une terrasse",
+        "feature_image_caption": "Nice au matin. Illustration originale créée pour la nouvelle maquette de Nice RendezVous.",
+        "type": "post",
+        "status": "published",
+        "visibility": "public",
+        "featured": true,
+        "created_at": "2026-06-10 08:00:00",
+        "updated_at": "2026-06-10 08:00:00",
+        "published_at": "2026-06-10 08:00:00"
+      },
+      {
+        "id": "000000000000000000000002",
+        "title": "Dans le Carnet : la rentrée culturelle se dessine à Nice",
+        "slug": "dans-le-carnet-rentree-culturelle-nice-2026",
+        "html": "<p>Expositions, concerts, rencontres et rendez-vous gourmands : la rentrée niçoise s’annonce dense. Voici les dates à noter et les lieux à redécouvrir.</p><h2>Trois expositions à voir</h2><p>Les musées de la ville renouvellent leurs accrochages tandis que plusieurs galeries ouvrent leurs portes aux artistes de la région. Une occasion de parcourir Nice autrement, du bord de mer aux collines.</p><h2>La ville en musique</h2><p>Les petites salles retrouvent leur public avec des programmes attentifs à la création locale. Pensez à vérifier les horaires auprès des organisateurs avant de vous déplacer.</p>",
+        "custom_excerpt": "Expositions, concerts, rencontres et rendez-vous gourmands : les dates à retenir pour une rentrée niçoise curieuse.",
+        "feature_image": "/content/images/2026/09/nice-editorial-cover.jpg",
+        "feature_image_alt": "Panorama de Nice et de la Méditerranée",
+        "type": "post",
+        "status": "published",
+        "visibility": "public",
+        "featured": false,
+        "created_at": "2026-09-05 07:30:00",
+        "updated_at": "2026-09-05 07:30:00",
+        "published_at": "2026-09-05 07:30:00"
+      },
+      {
+        "id": "000000000000000000000003",
+        "title": "Les petits farcis, une cuisine de patience et de partage",
+        "slug": "petits-farcis-cuisine-nicoise-partage",
+        "html": "<p>Tomates, courgettes rondes, oignons et fleurs de courgette composent l’un des plats les plus familiers de la cuisine niçoise. Chaque maison possède son geste, son assaisonnement et son souvenir.</p><h2>Choisir les légumes</h2><p>Ils doivent être petits, mûrs mais encore fermes. La farce accueille la chair prélevée, un reste de viande selon les familles, du pain, des herbes et parfois un peu de parmesan.</p><h2>Le temps fait le reste</h2><p>La cuisson doit rester douce. Servis tièdes, les farcis se partagent sans cérémonie, avec une salade et une conversation qui dure.</p>",
+        "custom_excerpt": "Tomates, courgettes, oignons : derrière ce plat familier se cache tout un art de la transmission niçoise.",
+        "feature_image": "/content/images/2026/09/legacy-fraises.jpg",
+        "feature_image_alt": "Fraises fraîches sur un étal de marché",
+        "type": "post",
+        "status": "published",
+        "visibility": "public",
+        "featured": false,
+        "created_at": "2026-09-03 09:15:00",
+        "updated_at": "2026-09-03 09:15:00",
+        "published_at": "2026-09-03 09:15:00"
+      },
+      {
+        "id": "000000000000000000000004",
+        "title": "Le Palais de la Méditerranée retrouve la Promenade des Anglais",
+        "slug": "palais-de-la-mediterranee-retrouve-promenade-des-anglais",
+        "html": "<p>Derrière sa façade Art déco classée, le Palais de la Méditerranée prépare sa réouverture. Le bâtiment retrouve sa place dans le paysage de la Promenade des Anglais.</p><p>La rénovation cherche un équilibre entre mémoire du lieu et usages contemporains. Les espaces ouverts sur la mer restent au centre du projet.</p>",
+        "custom_excerpt": "Derrière sa façade Art déco classée, l’établissement prépare une nouvelle page de son histoire niçoise.",
+        "feature_image": "/content/images/2026/09/nice-editorial-cover.jpg",
+        "feature_image_alt": "La baie de Nice et la Promenade des Anglais",
+        "type": "post",
+        "status": "published",
+        "visibility": "public",
+        "featured": false,
+        "created_at": "2026-08-29 08:40:00",
+        "updated_at": "2026-08-29 08:40:00",
+        "published_at": "2026-08-29 08:40:00"
+      },
+      {
+        "id": "000000000000000000000005",
+        "title": "Le Vieux-Nice à l’heure fraîche : notre promenade matinale",
+        "slug": "vieux-nice-promenade-matinale",
+        "html": "<p>Avant l’agitation, les ruelles du Vieux-Nice appartiennent aux livreurs, aux volets que l’on ouvre et aux premiers cafés. Notre itinéraire commence place Garibaldi et rejoint le cours Saleya.</p><p>Levez les yeux : façades, corniches et persiennes racontent autant la ville que ses monuments.</p>",
+        "custom_excerpt": "De la place Garibaldi au cours Saleya, un itinéraire à parcourir avant que la ville ne s’éveille tout à fait.",
+        "feature_image": "/content/images/2026/09/nice-editorial-cover.jpg",
+        "feature_image_alt": "Les toits du Vieux-Nice au matin",
+        "type": "post",
+        "status": "published",
+        "visibility": "public",
+        "featured": false,
+        "created_at": "2026-08-25 07:00:00",
+        "updated_at": "2026-08-25 07:00:00",
+        "published_at": "2026-08-25 07:00:00"
+      },
+      {
+        "id": "000000000000000000000006",
+        "title": "Au musée, les artistes de la Méditerranée changent notre regard",
+        "slug": "artistes-mediterranee-musee-nice",
+        "html": "<p>Une nouvelle exposition réunit des œuvres qui ont la Méditerranée pour horizon commun. La lumière n’y est pas un décor mais une matière.</p><p>Le parcours, volontairement resserré, laisse le temps de regarder et met en relation des générations rarement présentées ensemble.</p>",
+        "custom_excerpt": "Une exposition attentive fait dialoguer des générations d’artistes autour d’un horizon commun.",
+        "feature_image": "/content/images/2026/09/nice-editorial-cover.jpg",
+        "feature_image_alt": "Nice et la Méditerranée",
+        "type": "post",
+        "status": "published",
+        "visibility": "public",
+        "featured": false,
+        "created_at": "2026-08-20 11:10:00",
+        "updated_at": "2026-08-20 11:10:00",
+        "published_at": "2026-08-20 11:10:00"
+      },
+      {
+        "id": "000000000000000000000101",
+        "title": "Découvrir Nice",
+        "slug": "decouvrir-nice",
+        "html": "<p>Nice est une ville de passages et d’attachements. Cette porte d’entrée rassemble nos grands dossiers pour comprendre son histoire, ses traditions, ses quartiers et le territoire qui l’entoure.</p><h2>Histoire</h2><p>Des origines antiques au rattachement de 1860, retrouver les grandes dates, les personnages et les transformations urbaines.</p><h2>Identité</h2><p>Le Carnaval, la langue niçoise, les fêtes populaires, la cuisine et les musiques qui donnent à la ville son caractère.</p><h2>Visites</h2><p>Des parcours documentés pour le Vieux-Nice, Cimiez, le Port, la Promenade des Anglais et les musées.</p><h2>Villes et villages</h2><p>Explorer le Comté de Nice, ses vallées, son littoral et la Provence orientale.</p>",
+        "custom_excerpt": "Histoire, identité, visites et villages : les chemins pour comprendre le pays niçois.",
+        "feature_image": "/content/images/2026/09/nice-editorial-cover.jpg",
+        "feature_image_alt": "Vue de Nice entre vieille ville, mer et collines",
+        "type": "page",
+        "status": "published",
+        "visibility": "public",
+        "created_at": "2026-09-01 10:00:00",
+        "updated_at": "2026-09-01 10:00:00",
+        "published_at": "2026-09-01 10:00:00"
+      },
+      {
+        "id": "000000000000000000000102",
+        "title": "Histoire de Nice",
+        "slug": "histoire",
+        "html": "<p>Une chronologie vivante de Nice, de la cité grecque à la métropole contemporaine, en passant par la Maison de Savoie, le Comté et le rattachement à la France.</p><h2>Les grandes dates</h2><p>Notre archive historique sera progressivement restaurée ici, article après article, en conservant ses sources et ses auteurs.</p>",
+        "type": "page", "status": "published", "visibility": "public",
+        "created_at": "2026-09-01 10:00:00", "updated_at": "2026-09-01 10:00:00", "published_at": "2026-09-01 10:00:00"
+      },
+      {
+        "id": "000000000000000000000103",
+        "title": "Identité niçoise",
+        "slug": "identite",
+        "html": "<p>La culture niçoise se transmet par les mots, les gestes, les recettes, les musiques et les fêtes. Cette collection en rassemble la mémoire et les expressions présentes.</p>",
+        "type": "page", "status": "published", "visibility": "public",
+        "created_at": "2026-09-01 10:00:00", "updated_at": "2026-09-01 10:00:00", "published_at": "2026-09-01 10:00:00"
+      },
+      {
+        "id": "000000000000000000000104",
+        "title": "Visiter Nice",
+        "slug": "visites",
+        "html": "<p>Parcourir Nice à hauteur de rue : le centre-ville, le Vieux-Nice, la Promenade des Anglais, Cimiez, le Port, la colline du Château et les musées.</p>",
+        "type": "page", "status": "published", "visibility": "public",
+        "created_at": "2026-09-01 10:00:00", "updated_at": "2026-09-01 10:00:00", "published_at": "2026-09-01 10:00:00"
+      },
+      {
+        "id": "000000000000000000000105",
+        "title": "Villes et villages",
+        "slug": "villes-villages",
+        "html": "<p>Du littoral aux hautes vallées, cette archive suit les routes du Comté de Nice et de la Provence orientale : Roya, Bévéra, Vésubie, Tinée, Var, Estéron et Paillon.</p>",
+        "type": "page", "status": "published", "visibility": "public",
+        "created_at": "2026-09-01 10:00:00", "updated_at": "2026-09-01 10:00:00", "published_at": "2026-09-01 10:00:00"
+      },
+      {
+        "id": "000000000000000000000106",
+        "title": "La rédaction",
+        "slug": "a-propos",
+        "html": "<p>Nice RendezVous est né en 2002 de la volonté de journalistes niçois de raconter leur ville avec indépendance, curiosité et gourmandise.</p><p>Ce nouveau site prolonge ce travail : les mêmes archives, la même attention aux acteurs du territoire, et des outils plus simples pour continuer à publier.</p>",
+        "type": "page", "status": "published", "visibility": "public",
+        "created_at": "2026-09-01 10:00:00", "updated_at": "2026-09-01 10:00:00", "published_at": "2026-09-01 10:00:00"
+      },
+      {
+        "id": "000000000000000000000107",
+        "title": "Nous contacter",
+        "slug": "contact",
+        "html": "<p>Une information, un événement ou un communiqué à partager avec la rédaction ? Écrivez-nous à <a href=\"mailto:redaction@nicerendezvous.com\">redaction@nicerendezvous.com</a>.</p><p>Merci d’indiquer un contact, la date et le lieu de l’événement. La rédaction reste libre de ses choix éditoriaux.</p>",
+        "type": "page", "status": "published", "visibility": "public",
+        "created_at": "2026-09-01 10:00:00", "updated_at": "2026-09-01 10:00:00", "published_at": "2026-09-01 10:00:00"
+      },
+      {
+        "id": "000000000000000000000108",
+        "title": "Politique de confidentialité",
+        "slug": "politique-de-confidentialite",
+        "html": "<p>Cette page sera finalisée avec le responsable de publication avant la mise en ligne. Le nouveau site limite la collecte de données et respecte les choix d’abonnement et de désabonnement.</p><h2>La Lettre</h2><p>L’adresse e-mail est utilisée uniquement pour envoyer les publications choisies. Chaque message contient un lien de désinscription.</p>",
+        "type": "page", "status": "published", "visibility": "public",
+        "created_at": "2026-09-01 10:00:00", "updated_at": "2026-09-01 10:00:00", "published_at": "2026-09-01 10:00:00"
+      },
+      {
+        "id": "000000000000000000000109",
+        "title": "Mentions légales",
+        "slug": "mentions-legales",
+        "html": "<p>Éditeur : Serre Éditeur. Directeur de la publication et coordonnées d’hébergement à confirmer avant la mise en production.</p><p>Les textes, photographies, marques et logos restent protégés par leurs droits respectifs.</p>",
+        "type": "page", "status": "published", "visibility": "public",
+        "created_at": "2026-09-01 10:00:00", "updated_at": "2026-09-01 10:00:00", "published_at": "2026-09-01 10:00:00"
+      }
+    ],
+    "tags": [
+      { "id": "100000000000000000000001", "name": "Culture", "slug": "culture", "description": "Arts, spectacles, livres et vie culturelle à Nice et sur la Côte d’Azur." },
+      { "id": "100000000000000000000002", "name": "Actualités", "slug": "actualites", "description": "Les nouvelles de Nice, de la Côte d’Azur et de Monaco." },
+      { "id": "100000000000000000000003", "name": "Gastronomie", "slug": "gastronomie", "description": "Tables, produits, recettes et artisans du goût." },
+      { "id": "100000000000000000000004", "name": "Patrimoine", "slug": "patrimoine", "description": "Lieux, mémoire et architecture du pays niçois." },
+      { "id": "100000000000000000000005", "name": "Tourisme", "slug": "tourisme", "description": "Visites, hôtels, itinéraires et découvertes azuréennes." }
+    ],
+    "posts_tags": [
+      { "post_id": "000000000000000000000001", "tag_id": "100000000000000000000001", "sort_order": 0 },
+      { "post_id": "000000000000000000000002", "tag_id": "100000000000000000000002", "sort_order": 0 },
+      { "post_id": "000000000000000000000003", "tag_id": "100000000000000000000003", "sort_order": 0 },
+      { "post_id": "000000000000000000000004", "tag_id": "100000000000000000000005", "sort_order": 0 },
+      { "post_id": "000000000000000000000005", "tag_id": "100000000000000000000004", "sort_order": 0 },
+      { "post_id": "000000000000000000000006", "tag_id": "100000000000000000000001", "sort_order": 0 }
+    ]
+  }
+}

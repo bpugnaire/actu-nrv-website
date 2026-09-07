@@ -1,0 +1,13 @@
+{{!< default}}
+
+{{#tag}}
+<header class="archive-header shell">
+    <p class="eyebrow">Rubrique</p>
+    <h1>{{name}}</h1>
+    {{#if description}}<p>{{description}}</p>{{/if}}
+</header>
+{{/tag}}
+<section class="section shell">
+    <div class="story-grid">{{#foreach posts}}{{> post-card}}{{/foreach}}</div>
+    {{pagination}}
+</section>

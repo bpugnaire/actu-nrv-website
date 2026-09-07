@@ -1,0 +1,35 @@
+{
+  "name": "nice-rendezvous",
+  "description": "A modern editorial Ghost theme for Nice RendezVous",
+  "version": "0.1.0",
+  "author": {
+    "name": "Nice RendezVous",
+    "email": "redaction@nicerendezvous.com"
+  },
+  "engines": {
+    "ghost": ">=6.0.0"
+  },
+  "keywords": ["ghost-theme", "publication", "nice"],
+  "license": "UNLICENSED",
+  "config": {
+    "posts_per_page": 9,
+    "card_assets": true,
+    "image_sizes": {
+      "xs": { "width": 240 },
+      "s": { "width": 480 },
+      "m": { "width": 800 },
+      "l": { "width": 1200 },
+      "xl": { "width": 1800 }
+    },
+    "custom": {
+      "edition_label": {
+        "type": "text",
+        "default": "Nice · Côte d’Azur · Monaco"
+      },
+      "newsletter_heading": {
+        "type": "text",
+        "default": "La Lettre de Nice RendezVous"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+<nav class="pagination" aria-label="Pagination">
+    {{#if prev}}<a class="pagination__previous" href="{{page_url prev}}">← Articles plus récents</a>{{/if}}
+    <span>Page {{page}} sur {{pages}}</span>
+    {{#if next}}<a class="pagination__next" href="{{page_url next}}">Articles précédents →</a>{{/if}}
+</nav>
